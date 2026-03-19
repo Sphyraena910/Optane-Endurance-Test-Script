@@ -17,7 +17,6 @@ DISCLAIMER: This script comes with ABSOLUTELY NO WARRANTY, and will perform NVMe
 It is also strongly recommended that the drive under test be the only NVMe drive in the system, as the /dev/nvme*n* numbering may change between reboots/PCI device rescans.
 The author is NOT RESPONSIBLE for any data loss/drive failures caused by running this script!
 
-
 中文版 (OPTANE_zh.sh):
 
 傲腾写入耐久度测试脚本，可绕过限速问题
