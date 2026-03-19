@@ -1,4 +1,5 @@
 English (OPTANE_en.sh):
+
 A simple script for testing write endurance of Intel Optane SSDs after bandwidth throttling.
 
 Intel implements a firmware-level bandwidth throttling in their SSDs once "Percentage Used" reaches 105, causing endurance tests taking a long time. This script bypasses that limitation by repeatedly issuing NVMe Format via nvme-cli to achieve writing, and only checks data integrity sparingly using fio, greatly saving test times. It also checks for drive controller reset failures and automatically issues PCI device removals and rescans to try bringing it back online.
@@ -17,6 +18,7 @@ It is also strongly recommended that the drive under test be the only NVMe drive
 The author is NOT RESPONSIBLE for any data loss/drive failures caused by running this script!
 
 中文版 (OPTANE_zh.sh):
+
 傲腾写入耐久度测试脚本，可绕过限速问题
 
 由于牙膏厂在自家SSD的"已用寿命百分比"达到105后会触发固件层面的写入限速, 因此导致一般的耐久度测试耗时非常久
